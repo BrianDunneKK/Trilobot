@@ -31,4 +31,4 @@ while not exit_now:
         print("B --> Backward")
         tbot.backward()
         
-    time.sleep(0.5)
+    time.sleep(0.1)
