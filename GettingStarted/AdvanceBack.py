@@ -3,7 +3,7 @@
 import time
 import trilobot
 
-tbot = Trilobot()
+tbot = trilobot.Trilobot()
 exit_now = False
 button_names = ["A", "B", "X", "Y"]
 last_state = {'A': False, 'B': False, 'X': False, 'Y': False}
