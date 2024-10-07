@@ -12,7 +12,7 @@ delta_state = last_state.copy()
 
 
 while not exit_now:
-    for i in range(NUM_BUTTONS):
+    for i in range(trilobot.NUM_BUTTONS):
         btn_name = button_names[i]
         new_state[btn_name] = tbot.read_button(i)
         delta_state[btn_name] = (new_state[btn_name] != last_state[btn_name] )
