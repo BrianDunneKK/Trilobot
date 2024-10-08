@@ -4,10 +4,10 @@ import trilobot
 import sshkeyboard
 
 tbot = trilobot.Trilobot()
-exit_now = False
-speed = 9  # Use keys 0..9, where 9 is max speed
 
 def press(key):
+    global speed
+    speed = 9  # Use keys 0..9, where 9 is max speed
     if (key == "s"):
         print("Stop")
         tbot.stop()
