@@ -98,7 +98,7 @@ def main():
     server_start = StreamingServer(address, StreamingHandler)
 
     while True:
-        with PiCamera(resolution='640x480', framerate=24) as camera:
+        with Picamera2(resolution='640x480', framerate=24) as camera:
             output = StreamingOutput()
             camera.start_recording(output, format='mjpeg')
             print("Start streaming server...")
