@@ -53,7 +53,7 @@ def press(key):
             img = img.convert("RGBA")
             img = img.resize((1, 1), resample=0)
             dom_colour = img.getpixel((0, 0))
-            print("Dominant color = " + dom_colour)
+            print(dom_colour)
             if (dom_colour[0] > dom_colour[1] and dom_colour[0] > dom_colour[2]):
                 print("Dominant color = Red")
             elif (dom_colour[1] > dom_colour[2]):
